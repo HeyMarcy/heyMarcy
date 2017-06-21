@@ -6,25 +6,10 @@ import { StyleSheet, css } from 'aphrodite';
 
 import styles from './css/index.js';
 
-
 class Home extends Component {
-	constructor(props) {
-		super(props);
-		var now = new Date();
-		this.state = {
-			h: now.getHours()
-		};
-		setInterval(() => {
-			var now = new Date();
-			this.setState({
-				h: now.getHours()
-			});
-		}, 1000);
-	}
-
 	render() {
 		return (
-			<div className={css(styles.container)}>
+			<div className={css(styles.container)} ref={c => (this.container = c)}>
 				<div className={css(styles.containerHome)}>
 					<div className={css(styles.containerFlexColumn)}>
 						<HeyThere className={css(styles.heyThere)} />
@@ -33,7 +18,7 @@ class Home extends Component {
 							Checkout some of my lastest projects:
 						</p>
 					</div>
-					<ChicagoSkyline width="100%" fill="currentColor" className={css(styles.skyline)}/>
+					<ChicagoSkyline width="100%" fill="currentColor" />
 				</div>
 			</div>
 		);
