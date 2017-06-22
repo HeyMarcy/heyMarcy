@@ -10,8 +10,8 @@ class Fade extends Component {
 				render={({ location }) =>
 					<CSSTransitionGroup
 						transitionName="fade"
-						transitionEnterTimeout={300}
-						transitionLeaveTimeout={300}
+						transitionEnterTimeout={500}
+						transitionLeaveTimeout={500}
 					>
 						{React.cloneElement(this.props.children, {
 							location: location,

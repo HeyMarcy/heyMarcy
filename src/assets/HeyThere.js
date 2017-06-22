@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import styles from './css/index.js';
+import styles from '../css/index.js';
 
 const HeyThere = () => {
 	return (

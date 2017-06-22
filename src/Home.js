@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
-import ChicagoSkyline from './ChicagoSky1';
-import HeyThere from './HeyThere';
+import ChicagoSkyline from './assets/ChicagoSky1';
+import HeyThere from './assets/HeyThere';
 import { StyleSheet, css } from 'aphrodite';
 
 import styles from './css/index.js';

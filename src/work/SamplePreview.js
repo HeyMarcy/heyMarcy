@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { StyleSheet, css } from 'aphrodite';
 
 import appleiOSLogo from '../assets/appleios.png';
@@ -33,20 +33,19 @@ const sampleStyle = StyleSheet.create({
 	}
 });
 
-const SamplePreview = () =>
-	<div className={css(sampleStyle.quarter)}>
-		<div className={css(sampleStyle.container)}>
-
-			<h2>Project Type</h2>
-			<h2>A real-time chat and photosharing app</h2>
-			<div className={css(sampleStyle.containerFlex)}>
-				<img src={reactLogo} alt={'React logo'} />
-				<img src={appleiOSLogo} alt={'apple iOS logo'} />
-				<img src={expoLogo} alt={'Expo logo'} />
-
+const SamplePreview = props =>
+	<Link to={`work/${props.data.id}`}>
+		<div className={css(sampleStyle.quarter)}>
+			<div className={css(sampleStyle.container)}>
+				<h2>{props.type}</h2>
+				<h2>{props.title}</h2>
+				<div className={css(sampleStyle.containerFlex)}>
+					<img src={reactLogo} alt={'React logo'} />
+					<img src={appleiOSLogo} alt={'apple iOS logo'} />
+					<img src={expoLogo} alt={'Expo logo'} />
+				</div>
 			</div>
-
-		</div>
-	</div>;
-
-export default SamplePreview;
+		</div>;
+	</Link>;
+//
+// export default SamplePreview;

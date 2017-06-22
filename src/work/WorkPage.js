@@ -1,32 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+import { samplesData } from './samplesData';
 
-import WorkContent from './WorkContent';
-import './data';
+import WorkSamples from './WorkSamples';
 
 import { StyleSheet, css } from 'aphrodite';
-import styles from '../css/index.js';
 
-
-class Work extends React.PureComponent {
-
-  // onItemClick = (item) => {
-  //   this.props.push('/item');
-  // }
-
-  render() {
-    return (
-      <WorkContent
-        className={css(styles.container)}
-        onItemClick={this.onItemClick}
-      />
-    );
-  }
+class Work extends Component {
+	render() {
+		return (
+			<div>
+				<WorkSamples data={samplesData} />
+			</div>
+		);
+	}
 }
-
-
-// const mapDispatchToProps = {
-//   push,
-// }
-
-// export default connect (null, mapDispatchToProps)(Work);
 export default Work;

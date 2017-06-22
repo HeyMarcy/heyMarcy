@@ -5,17 +5,17 @@ import { StyleSheet, css } from 'aphrodite';
 const styles = StyleSheet.create({
 	containerHome: {
 		width: '100vw',
-		height:'100vh',
-		display:'flex',
+		height: '100vh',
+		display: 'flex',
 		flexDirection: 'column',
 		overflow: 'hidden',
 		justifyContent: 'flex-end',
-		margin:0,
+		margin: 0
 	},
 	containerVH100: {
 		width: '100vw',
-		height:'100vh',
-		display:'flex',
+		height: '100vh',
+
 		flexDirection: 'column',
 		overflow: 'hidden',
 		justifyContent: 'center'
@@ -23,13 +23,14 @@ const styles = StyleSheet.create({
 	containerFlexColumn: {
 		display: 'flex',
 		flexDirection: 'column',
-		justifyContent: 'center',
+		justifyContent: 'center'
 	},
+
 	container: {
 		width: '100%',
-		postition:'absolute',
-		top:0,
-		margin:0,
+		postition: 'absolute',
+		top: 0,
+		margin: 0
 	},
 	tagline: {
 		color: 'currentColor',
@@ -43,18 +44,17 @@ const styles = StyleSheet.create({
 		color: '#7072ab',
 		background: 'linear-gradient(to bottom, #82addb 0%, #ebb2b1 100%)',
 		width: '100vw',
-		height:'100vh',
+		height: '100vh'
 	},
 	heyThere: {
-		width:'40%',
-		margin:'0 auto 1.75em',
+		width: '40%',
+		margin: '1em auto 1.75em'
 	},
 	small: {
 		'@media (max-width: 600px)': {
-			backgroundColor: 'red',
+			backgroundColor: 'red'
 		}
 	}
 });
-
 
 export default styles;
