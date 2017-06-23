@@ -2,6 +2,10 @@ import React from 'react';
 import SamplePreview from './SamplePreview';
 import { StyleSheet, css } from 'aphrodite';
 import { samplesData } from './samplesData';
+import ReactLogo from '../assets/ReactLogo'
+import ExpoLogo from '../assets/ExpoLogo';
+import PhoneLogo from '../assets/PhoneLogo'
+
 
 const WorkSamples = props => {
 	return (
@@ -9,7 +13,13 @@ const WorkSamples = props => {
 			{props.data.map(item => {
 				return (
 					<div className={css(sampleStyle.quarter)}>
+						<PhoneLogo />
 						{item.title}
+							<div className={css(sampleStyle.logoWrapper)}>
+							<ReactLogo
+							className={css(sampleStyle.logoStyle)}/>
+							</div>
+
 					</div>
 				);
 			})}
@@ -26,6 +36,15 @@ const sampleStyle = StyleSheet.create({
 		paddingTop: '50px',
 		'justify-content': 'center',
 		overflow: 'hidden'
+	},
+	logoWrapper: {
+
+		height:'50px',
+		width: '50px',
+	},
+	logoStyle: {
+		':hover': { fill: 'darkslateblue' }
+
 	},
 	quarter: {
 		width: '42vw',

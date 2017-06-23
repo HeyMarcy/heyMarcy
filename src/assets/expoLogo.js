@@ -1,6 +1,6 @@
 import React from 'react';
 
-const expoLogo = () => {
+const ExpoLogo = () => {
 	return (
 		<svg viewBox="0 0 108 31">
 			<g fill="none">
@@ -17,4 +17,4 @@ const expoLogo = () => {
 	);
 };
 
-export default expoLogo;
+export default ExpoLogo;

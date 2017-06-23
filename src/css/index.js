@@ -34,14 +34,14 @@ const styles = StyleSheet.create({
 	},
 	tagline: {
 		color: 'currentColor',
-		mixBlendMode: 'multiply',
+
 		display: 'inline',
 		textAlign: 'center',
-		fontSize: '1.125em',
-		lineHeight: '1.65'
+		fontSize: '1.25em',
+		lineHeight: '1.8'
 	},
 	skygradient: {
-		color: '#7072ab',
+		color: '#4077a8',
 		background: 'linear-gradient(to bottom, #82addb 0%, #ebb2b1 100%)',
 		width: '100vw',
 		height: '100vh'

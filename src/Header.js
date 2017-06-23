@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
 	navLink: {
 		fontSize: '.95em',
 		listStyle: 'none',
-		color: '#7072ab',
+		color: 'currentColor',
 		textAlign: 'center',
 		'text-transform': 'uppercase',
 		'text-decoration': 'none',
