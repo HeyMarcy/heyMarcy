@@ -3,8 +3,10 @@ import FontAwesome from 'react-fontawesome';
 import ChicagoSkyline from './assets/ChicagoSky1';
 import HeyThere from './assets/HeyThere';
 import { StyleSheet, css } from 'aphrodite';
+import ChiSkyline from './assets/ChiSkyline.svg';
 
 import styles from './css/index.js';
+const currentColor = '#4077a8';
 
 class Home extends Component {
 	render() {
@@ -18,7 +20,12 @@ class Home extends Component {
 							Checkout some of my lastest projects:
 						</p>
 					</div>
-					<ChicagoSkyline width="100%" fill="currentColor" />
+					<img
+						src={ChiSkyline}
+						alt="Chicago Skyline"
+						className={css(styles.skyline)}
+					/>
+
 				</div>
 			</div>
 		);

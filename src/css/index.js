@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
 	},
 	tagline: {
 		color: 'currentColor',
-
 		display: 'inline',
 		textAlign: 'center',
 		fontSize: '1.25em',
@@ -45,6 +44,14 @@ const styles = StyleSheet.create({
 		background: 'linear-gradient(to bottom, #82addb 0%, #ebb2b1 100%)',
 		width: '100vw',
 		height: '100vh'
+	},
+	skyline: {
+		width: '150%',
+		position: 'absolute',
+		bottom: '-20px',
+		left: '-200px',
+		color: '#4077a8',
+		fill: '#4077a8'
 	},
 	heyThere: {
 		width: '40%',
