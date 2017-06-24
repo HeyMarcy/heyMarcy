@@ -1,9 +1,13 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: "proxima-nova", sans-serif;
 }
 .fade-enter {
+	opacity: 0;
+	z-index: 2;
+}
+.fade-leave {
 	opacity: 0;
 	z-index: 1;
 }

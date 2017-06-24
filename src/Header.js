@@ -33,7 +33,8 @@ const styles = StyleSheet.create({
 		}
 	},
 	navLink: {
-		fontSize: '.95em',
+		fontSize: '1em',
+		'letter-spacing': '1px',
 		listStyle: 'none',
 		color: 'currentColor',
 		textAlign: 'center',
