@@ -7,7 +7,8 @@ const screenSize = {
 	smartphoneLandscape:
 		'@media only screen and (min-width: 480px) and (max-width: 767px)',
 	tablet: '@media only screen and (min-width: 768px) and (max-width: 991px)',
-	desktop: '@media only screen and (min-width: 992px)'
+	desktop: '@media only screen and (min-width: 992px)',
+	desktopXL: '@media only screen and (min-width: 1220px)'
 };
 
 const styleHome = StyleSheet.create({
@@ -19,10 +20,10 @@ const styleHome = StyleSheet.create({
 		'justify-content': 'center'
 	},
 	containerHero: {
-		width: '50vw',
+		width: '60vw',
 		display: 'flex',
 		'flex-direction': 'column',
-		padding: '5% 0 0 0',
+		padding: '5% 5% 0',
 		overflow: 'hidden',
 		[screenSize.smartphone]: {
 			width: '90vw',
@@ -38,14 +39,29 @@ const styleHome = StyleSheet.create({
 			padding: '0 0 10% 0',
 			overflow: 'hidden'
 		},
-		[screenSize.tablet]: {}
+		[screenSize.tablet]: {
+			width: '65vw',
+
+			padding: '5% 8% 0'
+		},
+
+		[screenSize.desktop]: {
+			width: '60vw',
+			display: 'flex',
+			'flex-direction': 'column',
+			padding: '5% 5% 0',
+			overflow: 'hidden'
+		},
+		[screenSize.desktopXL]: {
+			width: '45vw'
+		}
 	},
 	heyThere: {
-		margin: '5%',
+		margin: '10% 5% 5%',
 		'z-index': '20',
 
-		[screenSize.smartphoneLandscape]: {
-			'margin-top': '80px'
+		[screenSize.smartphone]: {
+			margin: '2%'
 		}
 	},
 	p: {
@@ -66,7 +82,8 @@ const styleHome = StyleSheet.create({
 		lineHeight: '1.5',
 		[screenSize.smartphone]: {
 			fontSize: '1.25em',
-			margin: '1em'
+			margin: '1em',
+			'font-weight': '200'
 		},
 		[screenSize.smartphoneLandscape]: {
 			fontSize: '1.25em',
@@ -81,8 +98,9 @@ const styleHome = StyleSheet.create({
 		bottom: '-3px',
 		left: '-25%',
 		[screenSize.smartphone]: {
-			width: '350%',
-			left: '-50%'
+			width: '355%',
+			left: '-52%',
+			bottom: '-10px'
 		},
 		[screenSize.smartphoneLandscape]: {
 			width: '110%',
