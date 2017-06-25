@@ -8,7 +8,7 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import Fade from './Fade';
 
 // ** Screens ********
-import Home from './Home';
+import Home from './home/Home';
 import Work from './work/WorkPage';
 import Contact from './Contact';
 import Header from './Header';
