@@ -11,40 +11,45 @@ const screenSize = {
 };
 
 const styleHome = StyleSheet.create({
-
 	containerHome: {
 		width: '100vw',
 		height: '100vh',
 		display: 'flex',
 		overflow: 'hidden',
-		'justify-content': 'center',
+		'justify-content': 'center'
 	},
 	containerHero: {
-		width:'50vw',
+		width: '50vw',
 		display: 'flex',
-		'flex-direction':'column',
-		'padding-top':'5%',
+		'flex-direction': 'column',
+		padding: '5% 0 0 0',
 		overflow: 'hidden',
 		[screenSize.smartphone]: {
-			width:'90vw',
+			width: '90vw',
 			display: 'flex',
-			'flex-direction':'column',
-			'padding-top':'20%',
-			overflow: 'hidden',
-
+			'flex-direction': 'column',
+			'padding-top': '20%',
+			overflow: 'hidden'
 		},
-
+		[screenSize.smartphoneLandscape]: {
+			width: '60vw',
+			display: 'flex',
+			'flex-direction': 'column',
+			padding: '0 0 10% 0',
+			overflow: 'hidden'
+		},
+		[screenSize.tablet]: {}
 	},
 	heyThere: {
 		margin: '5%',
+		'z-index': '20',
 
 		[screenSize.smartphoneLandscape]: {
-
-
+			'margin-top': '80px'
+		}
 	},
-},
-	p:{
-		margin:'.25em auto'
+	p: {
+		margin: '.25em auto'
 	},
 	noOrphan: {
 		'white-space': 'pre'
@@ -61,14 +66,13 @@ const styleHome = StyleSheet.create({
 		lineHeight: '1.5',
 		[screenSize.smartphone]: {
 			fontSize: '1.25em',
-			margin: '1em',
+			margin: '1em'
 		},
 		[screenSize.smartphoneLandscape]: {
-
 			fontSize: '1.25em',
 			'font-weight': 100,
-			display:'none'
-	},
+			display: 'none'
+		}
 	},
 
 	skyline: {
@@ -77,21 +81,19 @@ const styleHome = StyleSheet.create({
 		bottom: '-3px',
 		left: '-25%',
 		[screenSize.smartphone]: {
-			width: '345%',
-			left: '-125%'
+			width: '350%',
+			left: '-50%'
 		},
 		[screenSize.smartphoneLandscape]: {
-			width: '120%',
-			left: '-10%',
-			bottom: '0px',
-	},
+			width: '110%',
+			left: '-5%',
+			bottom: '-10px'
+		},
 		[screenSize.tablet]: {
 			width: '210%',
 			left: '-80%'
-	 },
-	},
-
-
+		}
+	}
 });
 
 export default styleHome;
