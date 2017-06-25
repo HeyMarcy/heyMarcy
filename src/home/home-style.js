@@ -56,6 +56,7 @@ const styleHome = StyleSheet.create({
 			width: '45vw'
 		}
 	},
+
 	heyThere: {
 		margin: '10% 5% 5%',
 		'z-index': '20',
@@ -63,6 +64,10 @@ const styleHome = StyleSheet.create({
 		[screenSize.smartphone]: {
 			margin: '2%'
 		}
+	},
+	heytagline: {
+		fill: 'currentColor',
+		mixBlendMode: 'multiply'
 	},
 	p: {
 		margin: '.25em auto'
