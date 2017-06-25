@@ -11,6 +11,7 @@ const screenSize = {
 };
 
 const styleHome = StyleSheet.create({
+
 	containerHome: {
 		width: '100vw',
 		height: '100vh',
@@ -22,7 +23,7 @@ const styleHome = StyleSheet.create({
 		width:'50vw',
 		display: 'flex',
 		'flex-direction':'column',
-		'padding-top':'2%',
+		'padding-top':'5%',
 		overflow: 'hidden',
 		[screenSize.smartphone]: {
 			width:'90vw',
@@ -35,7 +36,7 @@ const styleHome = StyleSheet.create({
 
 	},
 	heyThere: {
-		margin: '8%',
+		margin: '5%',
 
 		[screenSize.smartphoneLandscape]: {
 
@@ -43,12 +44,15 @@ const styleHome = StyleSheet.create({
 	},
 },
 	p:{
-		margin:'.15em auto'
+		margin:'.25em auto'
 	},
 	noOrphan: {
 		'white-space': 'pre'
 	},
 	tagline: {
+		'font-family': 'proxima-nova, sans-serif',
+		'font-style': 'normal',
+		'font-weight': '100',
 		margin: 0,
 		color: '#295B89',
 		display: 'inline',
@@ -62,6 +66,7 @@ const styleHome = StyleSheet.create({
 		[screenSize.smartphoneLandscape]: {
 
 			fontSize: '1.25em',
+			'font-weight': 100,
 			display:'none'
 	},
 	},
@@ -69,11 +74,11 @@ const styleHome = StyleSheet.create({
 	skyline: {
 		width: '130%',
 		position: 'absolute',
-		bottom: '-20px',
+		bottom: '-3px',
 		left: '-25%',
 		[screenSize.smartphone]: {
-			width: '310%',
-			left: '-120%'
+			width: '345%',
+			left: '-125%'
 		},
 		[screenSize.smartphoneLandscape]: {
 			width: '120%',
