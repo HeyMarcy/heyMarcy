@@ -5,7 +5,7 @@ const currentColor = '#295B89';
 const screenSize = {
 	smartphone: '@media only screen and (max-width: 479px)',
 	smartphoneLandscape:
-		'@media only screen and (min-width: 480px) and (max-width: 767px)',
+		'@media only screen and (min-device-width: 480px)and (max-device-width: 767px)and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape)',
 	tablet: '@media only screen and (min-width: 768px) and (max-width: 991px)',
 	desktop: '@media only screen and (min-width: 992px)and (max-width: 1220px)',
 	desktopXL: '@media only screen and (min-width: 1221px)'
@@ -70,7 +70,8 @@ const styleHome = StyleSheet.create({
 		},
 
 		[screenSize.smartphoneLandscape]: {
-			padding: '0 3%'
+			padding: '0',
+			margin: 'auto'
 		},
 		[screenSize.desktop]: {
 			margin: '5% 20%  '
@@ -104,15 +105,14 @@ const styleHome = StyleSheet.create({
 			margin: '1.5em 3.25em',
 			'font-weight': '200'
 		},
-		[screenSize.smartphoneLandscape]: {
-			fontSize: '1em',
-			margin: ' 0',
-			'font-weight': '200'
-		},
+
 		[screenSize.tablet]: {
 			fontSize: '1.15em',
 			margin: '2em 0',
 			'font-weight': '200'
+		},
+		[screenSize.smartphoneLandscape]: {
+			display: 'none'
 		}
 	},
 	skylineWrapper: {

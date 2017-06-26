@@ -8,7 +8,7 @@ const ChicagoSkyline = () => {
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				className={css(styleHome.skyline)}
-				viewBox="0 0 1426 520"
+				viewBox="0 0 1426 515"
 			>
 				<g fill="#4077a8" fillRule="evenodd">
 					<g opacity=".3" transform="translate(194 182.636)">

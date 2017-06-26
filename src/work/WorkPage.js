@@ -4,8 +4,6 @@ import { samplesData } from './samplesData';
 
 import FourSamples from './FourSamples';
 
-import { StyleSheet, css } from 'aphrodite';
-
 class Work extends Component {
 	render() {
 		return (

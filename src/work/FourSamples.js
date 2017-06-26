@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import SamplePreview from './SamplePreview';
 import { StyleSheet, css } from 'aphrodite';
+import styleWork from './work-style.js';
 import { samplesData } from './samplesData';
 import ReactLogo from '../assets/ReactLogo';
 import ExpoLogo from '../assets/ExpoLogo';
@@ -17,17 +18,18 @@ const Pipe = () => {
 
 const FourSamples = props => {
 	return (
-		<div className={css(sampleStyle.flexWrapper)}>
+		<div className={css(styleWork.flexWrapper)}>
+			<div className={css(styleWork.spacer50)} />
 
-			<Link to="/ios-app" className={css(sampleStyle.links)}>
-				<div className={css(sampleStyle.quarter)}>
-					<div className={css(sampleStyle.iconWrapper)}>
+			<Link to="/ios-app" className={css(styleWork.links)}>
+				<div className={css(styleWork.quarter)}>
+					<div className={css(styleWork.iconWrapper)}>
 						<PhoneLogo />
 					</div>
-					<div className={css(sampleStyle.spacer)} />
-					<h3 className={css(sampleStyle.title)}>Stop Drop & Selfie</h3>
+					<div className={css(styleWork.spacer)} />
+					<h3 className={css(styleWork.title)}>Stop Drop & Selfie</h3>
 					<p>A realtime chat and photosharing app</p>
-					<ul className={css(sampleStyle.listStyle)}>
+					<ul className={css(styleWork.listStyle)}>
 						<li>React Native</li>
 						<Pipe />
 						<li>Expo</li>
@@ -39,15 +41,15 @@ const FourSamples = props => {
 				</div>
 			</Link>
 
-			<Link to="/Apprenda" className={css(sampleStyle.links)}>
-				<div className={css(sampleStyle.quarter)}>
-					<div className={css(sampleStyle.iconWrapper)}>
+			<Link to="/Apprenda" className={css(styleWork.links)}>
+				<div className={css(styleWork.quarter)}>
+					<div className={css(styleWork.iconWrapper)}>
 						<ResponsiveTagline />
 					</div>
-					<div className={css(sampleStyle.spacer)} />
-					<h3 className={css(sampleStyle.title)}>Apprenda Portugese</h3>
+					<div className={css(styleWork.spacer)} />
+					<h3 className={css(styleWork.title)}>Apprenda Portugese</h3>
 					<p>A language learing app</p>
-					<ul className={css(sampleStyle.listStyle)}>
+					<ul className={css(styleWork.listStyle)}>
 						<li>React</li>
 						<Pipe />
 						<li>Redux</li>
@@ -61,15 +63,15 @@ const FourSamples = props => {
 				</div>
 			</Link>
 
-			<Link to="/Apprenda" className={css(sampleStyle.links)}>
-				<div className={css(sampleStyle.quarter)}>
-					<div className={css(sampleStyle.iconWrapper)}>
+			<Link to="/Apprenda" className={css(styleWork.links)}>
+				<div className={css(styleWork.quarter)}>
+					<div className={css(styleWork.iconWrapper)}>
 						<LaptopTagline />
 					</div>
-					<div className={css(sampleStyle.spacer)} />
-					<h3 className={css(sampleStyle.title)}>My Day Weather</h3>
+					<div className={css(styleWork.spacer)} />
+					<h3 className={css(styleWork.title)}>My Day Weather</h3>
 					<p>A personal weather app</p>
-					<ul className={css(sampleStyle.listStyle)}>
+					<ul className={css(styleWork.listStyle)}>
 						<li>React</li>
 						<Pipe />
 						<li>Redux</li>
@@ -81,17 +83,17 @@ const FourSamples = props => {
 				</div>
 			</Link>
 
-			<Link to="/Apprenda" className={css(sampleStyle.links)}>
-				<div className={css(sampleStyle.quarter)}>
-					<div className={css(sampleStyle.iconWrapper)}>
+			<Link to="/Apprenda" className={css(styleWork.links)}>
+				<div className={css(styleWork.quarter)}>
+					<div className={css(styleWork.iconWrapper)}>
 						<UXUITagline />
 					</div>
-					<div className={css(sampleStyle.spacer)} />
-					<h3 className={css(sampleStyle.title)}>
+					<div className={css(styleWork.spacer)} />
+					<h3 className={css(styleWork.title)}>
 						Interface and Interaction Design
 					</h3>
 					<p>Wireframes, User Journeys, Mockups and Prototypes</p>
-					<ul className={css(sampleStyle.listStyle)}>
+					<ul className={css(styleWork.listStyle)}>
 						<li>Sketch</li>
 						<Pipe />
 						<li>Illustrator</li>
@@ -109,70 +111,3 @@ const FourSamples = props => {
 	);
 };
 export default FourSamples;
-
-const sampleStyle = StyleSheet.create({
-	links: {
-		color: 'currentColor',
-		'text-decoration': 'none'
-	},
-	flexWrapper: {
-		display: 'flex',
-		'flex-wrap': 'wrap',
-		width: '100vw',
-		paddingTop: '50px',
-		'justify-content': 'center',
-		overflow: 'hidden'
-	},
-	iconWrapper: {
-		display: 'flex',
-		'justify-content': 'center',
-		margin: '.5em auto 1em ',
-		height: '120px'
-	},
-
-	iconStyle: {
-		'align-self': 'center'
-	},
-	logoWrapper: {
-		height: '50px',
-		width: '50px'
-	},
-	logoStyle: {
-		':hover': { fill: 'darkslateblue' }
-	},
-	quarter: {
-		textAlign: 'center',
-		display: 'flex',
-		'flex-direction': 'column',
-		'justify-content': 'center',
-		width: '42vw',
-		padding: '24px',
-		background: 'rgba(255,255,255,.5)',
-		borderRadius: '10px',
-		margin: '15px',
-		height: '36vh',
-		transition: 'all 200ms ease-in',
-		transform: 'scale(1)',
-
-		':hover': {
-			background: 'rgba(255,255,255,1)',
-			boxShadow: ' 0px 0px 20px rgba(0,0,0,.5)',
-			zIndex: 2,
-			transition: 'all 200ms ease-in',
-			transform: 'scale(1.04)'
-		}
-	},
-	title: {
-		margin: '1em 0 0 ',
-		'justify-content': 'center',
-		'font-size': '2em',
-		'font-weight': '100'
-	},
-	listStyle: {
-		'list-style': 'none',
-		display: 'flex',
-		'justify-content': 'center',
-		margin: '2em 3em',
-		padding: '0 3em'
-	}
-});
