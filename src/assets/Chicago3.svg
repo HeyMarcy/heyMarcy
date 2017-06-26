@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1426" height="520" viewBox="0 0 1426 520">
-  <g fill='#4077a8'  fillRule="evenodd">
+  <g fill='#4077a8'  fillRule="evenodd" transform="translate(0 -1)">
     <g opacity=".3" transform="translate(194 182.636)">
       <polygon points="844.354 182.18 853.893 182.18 853.893 44.123 844.354 44.123"/>
       <polygon points="964.697 60.504 949.999 60.504 949.999 182.179 973.299 182.179 973.299 160.386 988.998 160.386 988.998 38.712 964.697 38.712"/>

@@ -103,8 +103,9 @@ const styleHome = StyleSheet.create({
 		bottom: '-20%',
 		left: '-25%',
 		[screenSize.smartphone]: {
-			width: '355%',
-			left: '-52%'
+			width: '360%',
+			left: '-52%',
+			bottom: '-20%'
 		},
 		[screenSize.smartphoneLandscape]: {
 			width: '110%',
