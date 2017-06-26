@@ -100,17 +100,15 @@ const styleHome = StyleSheet.create({
 	skyline: {
 		width: '130%',
 		position: 'absolute',
-		bottom: '-3px',
+		bottom: '-20%',
 		left: '-25%',
 		[screenSize.smartphone]: {
 			width: '355%',
-			left: '-52%',
-			bottom: '-10px'
+			left: '-52%'
 		},
 		[screenSize.smartphoneLandscape]: {
 			width: '110%',
-			left: '-5%',
-			bottom: '-10px'
+			left: '-5%'
 		},
 		[screenSize.tablet]: {
 			width: '210%',
