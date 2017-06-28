@@ -5,7 +5,7 @@ const currentColor = '#295B89';
 const screenSize = {
 	smartphone: '@media only screen and (max-width: 479px)',
 	smartphoneLandscape:
-		'@media only screen and (min-device-width: 480px)and (max-device-width: 767px)and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape)',
+		'@media only screen and (min-device-width: 480px)and (max-device-width: 767px)',
 	tablet: '@media only screen and (min-width: 768px) and (max-width: 991px)',
 	desktop: '@media only screen and (min-width: 992px)and (max-width: 1220px)',
 	desktopXL: '@media only screen and (min-width: 1221px)'
@@ -47,17 +47,21 @@ const styleHome = StyleSheet.create({
 		},
 		[screenSize.tablet]: {
 			width: '62vw',
-			padding: '8% '
+			height: '60vh',
+			margin: '8vh auto 32vh'
 		},
 		[screenSize.desktop]: {
 			width: '60vw',
+			height: '60vh',
+			margin: '10vh auto 30vh',
 			display: 'flex',
 			'flex-direction': 'column',
-			padding: '5% 0 0',
 			overflow: 'hidden'
 		},
 		[screenSize.desktopXL]: {
-			width: '60vw'
+			width: '60vw',
+			height: '60vh',
+			margin: '5vh auto 35vh'
 		}
 	},
 
@@ -87,32 +91,39 @@ const styleHome = StyleSheet.create({
 	p: {
 		margin: '.5em auto'
 	},
-	noOrphan: {
-		'white-space': 'pre'
+	noWrap: {
+		'white-space': 'nowrap'
 	},
 	tagline: {
 		'font-family': 'proxima-nova, sans-serif',
 		'font-style': 'normal',
-		'font-weight': '100',
 		margin: 0,
 		color: '#295B89',
 		display: 'inline',
 		textAlign: 'center',
 		fontSize: '1.45em',
 		lineHeight: '1.65',
+		display: 'none',
 		[screenSize.smartphone]: {
 			fontSize: '1.125em',
 			margin: '1.5em 3.25em',
-			'font-weight': '200'
+			display: 'block'
+		},
+		[screenSize.smartphoneLandscape]: {
+			display: 'none'
 		},
 
 		[screenSize.tablet]: {
 			fontSize: '1.15em',
 			margin: '2em 0',
-			'font-weight': '200'
+			display: 'block'
 		},
-		[screenSize.smartphoneLandscape]: {
-			display: 'none'
+
+		[screenSize.desktop]: {
+			display: 'block'
+		},
+		[screenSize.desktopXL]: {
+			display: 'block'
 		}
 	},
 	skylineWrapper: {

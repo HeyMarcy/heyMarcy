@@ -1,6 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { StyleSheet, css } from 'aphrodite';
+const screenSize = {
+	smartphoneXS: '@media only screen and (max-width: 369px)',
+	smartphone:
+		'@media only screen and (min-width: 370px) and (max-width: 479px)',
+	smartphone:
+		'@media only screen and (min-width: 370px) and (max-width: 479px)',
+	smartphoneLandscape:
+		'@media only screen and (min-width: 480px) and (max-width: 767px)',
+	tablet: '@media only screen and (min-width: 768px) and (max-width: 991px)',
+	desktop: '@media only screen and (min-width: 992px)and (max-width: 1220px)',
+	desktopXL: '@media only screen and (min-width: 1221px)'
+};
 
 const styles = StyleSheet.create({
 	headerNav: {
@@ -29,7 +41,7 @@ const styles = StyleSheet.create({
 	headerListHover: {
 		':hover': {
 			color: '#fff',
-			background: 'rgba(0,0,0,.2)'
+			background: 'rgba(0,0,0,.1)'
 		}
 	},
 	navLink: {
@@ -42,7 +54,15 @@ const styles = StyleSheet.create({
 		'text-decoration': 'none',
 		display: 'block',
 		transition: '.2s',
-		padding: '1em'
+		padding: '.5em',
+		'padding-top': '.75em',
+
+		[screenSize.desktop]: {
+			fontSize: '1.25em'
+		},
+		[screenSize.desktopXL]: {
+			fontSize: '1.4em'
+		}
 	}
 });
 

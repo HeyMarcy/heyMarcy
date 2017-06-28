@@ -1,20 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import SamplePreview from './SamplePreview';
 import { StyleSheet, css } from 'aphrodite';
-import { samplesData } from './samplesData';
-import ReactLogo from '../assets/ReactLogo';
-import ExpoLogo from '../assets/ExpoLogo';
-import PhoneLogo from '../assets/PhoneLogo';
-import PhoneBig from '../assets/PhoneBig';
-import ResponsiveTagline from '../assets/ResponsiveTagline';
-import LaptopTagline from '../assets/LaptopTagline';
-import UXUITagline from '../assets/UXUITagline';
-
-const Pipe = () => {
-	return <li><span style={{ padding: '12px', opacity: '.5' }}>|</span></li>;
-};
 
 const IosApp = props => {
 	return (
@@ -23,9 +10,7 @@ const IosApp = props => {
 				<h3 className={css(sampleStyle.title)}>
 					Stop, Drop & Selfie
 				</h3>
-				<div className={css(sampleStyle.phoneWrapper)}>
-					<PhoneBig />
-				</div>
+				<div className={css(sampleStyle.phoneWrapper)} />
 			</div>
 
 		</div>
@@ -54,23 +39,6 @@ const sampleStyle = StyleSheet.create({
 		position: 'absolute',
 		right: '300px',
 		bottom: '400px'
-	},
-	iconWrapper: {
-		display: 'flex',
-		'justify-content': 'center',
-		margin: '.5em auto 1em ',
-		height: '120px'
-	},
-
-	iconStyle: {
-		'align-self': 'center'
-	},
-	logoWrapper: {
-		height: '50px',
-		width: '50px'
-	},
-	logoStyle: {
-		':hover': { fill: 'darkslateblue' }
 	},
 
 	title: {

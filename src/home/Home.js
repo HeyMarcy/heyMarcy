@@ -22,7 +22,7 @@ class Home extends Component {
 							</p>
 							<p className={css(styleHome.p)}>
 								Checkout some of my{' '}
-								<span className={css(styleHome.noOrphan)}>
+								<span className={css(styleHome.noWrap)}>
 									lastest projects.
 								</span>
 							</p>

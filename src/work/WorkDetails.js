@@ -6,14 +6,13 @@ import { StyleSheet, css } from 'aphrodite';
 import { samplesData } from './samplesData';
 import ReactLogo from '../assets/ReactLogo';
 import ExpoLogo from '../assets/ExpoLogo';
-import PhoneLogo from '../assets/PhoneLogo';
 import ResponsiveTagline from '../assets/ResponsiveTagline';
 import LaptopTagline from '../assets/LaptopTagline';
 import UXUITagline from '../assets/UXUITagline';
 
 const Pipe = () => {
-	return <li><span style={{padding:'12px', opacity: '.5'}}>|</span></li>
-}
+	return <li><span style={{ padding: '12px', opacity: '.5' }}>|</span></li>;
+};
 
 const Apprenda = props => {
 	return (
@@ -21,12 +20,11 @@ const Apprenda = props => {
 			<h3 className={css(sampleStyle.title)}>Apprenda Portugese</h3>
 
 		</div>
-	)
+	);
 };
 export default Apprenda;
 
 const sampleStyle = StyleSheet.create({
-
 	flexWrapper: {
 		display: 'flex',
 		'flex-wrap': 'wrap',
@@ -35,19 +33,18 @@ const sampleStyle = StyleSheet.create({
 		overflow: 'hidden'
 	},
 	page: {
-		display:'flex',
+		display: 'flex',
 		'flex-direction': 'column',
 		width: '100vw',
 		height: '100vw',
 		padding: '24px',
-		background: 'currentColor',
-
+		background: 'currentColor'
 	},
 	iconWrapper: {
 		display: 'flex',
-		'justify-content':'center',
+		'justify-content': 'center',
 		margin: '.5em auto 1em ',
-		height: '120px',
+		height: '120px'
 	},
 
 	iconStyle: {
@@ -55,7 +52,7 @@ const sampleStyle = StyleSheet.create({
 	},
 	logoWrapper: {
 		height: '50px',
-		width: '50px',
+		width: '50px'
 	},
 	logoStyle: {
 		':hover': { fill: 'darkslateblue' }
@@ -63,15 +60,15 @@ const sampleStyle = StyleSheet.create({
 
 	title: {
 		margin: '1em 0 0 ',
-		'justify-content':'center',
-		'font-size':'2em',
-		'font-weight': '100',
+		'justify-content': 'center',
+		'font-size': '2em',
+		'font-weight': '100'
 	},
 	listStyle: {
-		'list-style':'none',
+		'list-style': 'none',
 		display: 'flex',
-		'justify-content':'center',
-		margin:'2em 3em',
+		'justify-content': 'center',
+		margin: '2em 3em',
 		padding: '0 3em'
 	}
 });

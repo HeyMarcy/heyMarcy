@@ -12,10 +12,10 @@ import Home from './home/Home';
 import Work from './work/WorkPage';
 import Contact from './Contact';
 import Header from './Header';
-import MyDay from './work/MyDay';
-import UxUiDesign from './work/UxUiDesign';
-import Apprenda from './work/Apprenda';
-import IosApp from './work/IosApp';
+import MyDay from './work/details/MyDay';
+import UxUiDesign from './work/details/UxUiDesign';
+import Apprenda from './work/details/Apprenda';
+import IosApp from './work/details/IosApp';
 
 class App extends Component {
 	render() {

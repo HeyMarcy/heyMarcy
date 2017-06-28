@@ -1,82 +1,61 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import SamplePreview from './SamplePreview';
 import { StyleSheet, css } from 'aphrodite';
 import styleWork from './work-style.js';
 import { samplesData } from './samplesData';
 import ReactLogo from '../assets/ReactLogo';
 import ExpoLogo from '../assets/ExpoLogo';
-import PhoneLogo from '../assets/PhoneLogo';
-import ResponsiveTagline from '../assets/ResponsiveTagline';
-import LaptopTagline from '../assets/LaptopTagline';
-import UXUITagline from '../assets/UXUITagline';
+import PhoneLogo from './assets/PhoneLogo';
+import ResponsiveIcon from './assets/ResponsiveIcon';
+// import LaptopIcon from './assets/LaptopIcon';
+import UXicon from './assets/UXicon';
 
 const Pipe = () => {
-	return <li><span style={{ padding: '12px', opacity: '.5' }}>|</span></li>;
+	return <li><span className={css(styleWork.pipe)}>|</span></li>;
 };
 
 const FourSamples = props => {
 	return (
 		<div className={css(styleWork.flexWrapper)}>
-			<div className={css(styleWork.spacer50)} />
 
 			<Link to="/ios-app" className={css(styleWork.links)}>
 				<div className={css(styleWork.quarter)}>
-					<div className={css(styleWork.iconWrapper)}>
-						<PhoneLogo />
-					</div>
-					<div className={css(styleWork.spacer)} />
-					<h3 className={css(styleWork.title)}>Stop Drop & Selfie</h3>
-					<p>A realtime chat and photosharing app</p>
+
+					<PhoneLogo className={css(styleWork.IconTag)} />
+
+					<h3 className={css(styleWork.title)}>
+						Stop, Drop <span className={css(styleWork.noWrap)}>& Selfie</span>
+					</h3>
+					<p className={css(styleWork.description)}>
+						A realtime chat and{' '}
+						<span className={css(styleWork.noWrap)}>photo-sharing app</span>
+					</p>
 					<ul className={css(styleWork.listStyle)}>
 						<li>React Native</li>
-						<Pipe />
-						<li>Expo</li>
+
 						<Pipe />
 						<li>Redux</li>
 						<Pipe />
-						<li>WebSockets</li>
+						<li>Websockets</li>
 					</ul>
 				</div>
 			</Link>
 
-			<Link to="/Apprenda" className={css(styleWork.links)}>
+			<Link to="/MyDay" className={css(styleWork.links)}>
 				<div className={css(styleWork.quarter)}>
-					<div className={css(styleWork.iconWrapper)}>
-						<ResponsiveTagline />
-					</div>
-					<div className={css(styleWork.spacer)} />
-					<h3 className={css(styleWork.title)}>Apprenda Portugese</h3>
-					<p>A language learing app</p>
-					<ul className={css(styleWork.listStyle)}>
-						<li>React</li>
-						<Pipe />
-						<li>Redux</li>
-						<Pipe />
-						<li>Router</li>
-						<Pipe />
-						<li>MongoDB</li>
-						<Pipe />
-						<li>Express</li>
-					</ul>
-				</div>
-			</Link>
-
-			<Link to="/Apprenda" className={css(styleWork.links)}>
-				<div className={css(styleWork.quarter)}>
-					<div className={css(styleWork.iconWrapper)}>
-						<LaptopTagline />
-					</div>
-					<div className={css(styleWork.spacer)} />
+					<ResponsiveIcon />
 					<h3 className={css(styleWork.title)}>My Day Weather</h3>
-					<p>A personal weather app</p>
+					<p className={css(styleWork.description)}>
+						A personal{' '}
+						<span className={css(styleWork.noWrap)}>weather app</span>
+					</p>
 					<ul className={css(styleWork.listStyle)}>
 						<li>React</li>
 						<Pipe />
 						<li>Redux</li>
 						<Pipe />
-						<li>Router</li>
+						<li>React Router</li>
 						<Pipe />
 						<li>Web API</li>
 					</ul>
@@ -85,22 +64,38 @@ const FourSamples = props => {
 
 			<Link to="/Apprenda" className={css(styleWork.links)}>
 				<div className={css(styleWork.quarter)}>
-					<div className={css(styleWork.iconWrapper)}>
-						<UXUITagline />
-					</div>
-					<div className={css(styleWork.spacer)} />
+					<ResponsiveIcon />
+					<h3 className={css(styleWork.title)}>Apprenda</h3>
+					<p className={css(styleWork.description)}>
+						A Portugese language{' '}
+						<span className={css(styleWork.noWrap)}>learing app</span>
+					</p>
+					<ul className={css(styleWork.listStyle)}>
+						<li>React</li>
+						<Pipe />
+						<li>Redux</li>
+
+						<Pipe />
+						<li>MondgoDB</li>
+						<Pipe />
+						<li>Express</li>
+					</ul>
+				</div>
+			</Link>
+
+			<Link to="/UxUiDesign" className={css(styleWork.links)}>
+				<div className={css(styleWork.quarter)}>
+					<UXicon />
 					<h3 className={css(styleWork.title)}>
-						Interface and Interaction Design
+						UX & UI Design
 					</h3>
-					<p>Wireframes, User Journeys, Mockups and Prototypes</p>
+					<p className={css(styleWork.description)}>
+						Wireframes, Mockups and Prototypes
+					</p>
 					<ul className={css(styleWork.listStyle)}>
 						<li>Sketch</li>
 						<Pipe />
-						<li>Illustrator</li>
-						<Pipe />
-						<li>Photoshop</li>
-						<Pipe />
-						<li>Axure</li>
+						<li>Adobe CC</li>
 						<Pipe />
 						<li>Invision</li>
 					</ul>

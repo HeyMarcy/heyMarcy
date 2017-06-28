@@ -1,15 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import SamplePreview from './SamplePreview';
 import { StyleSheet, css } from 'aphrodite';
-import { samplesData } from './samplesData';
-import ReactLogo from '../assets/ReactLogo';
-import ExpoLogo from '../assets/ExpoLogo';
-import PhoneLogo from '../assets/PhoneLogo';
-import ResponsiveTagline from '../assets/ResponsiveTagline';
-import LaptopTagline from '../assets/LaptopTagline';
-import UXUITagline from '../assets/UXUITagline';
 
 const Pipe = () => {
 	return <li><span style={{ padding: '12px', opacity: '.5' }}>|</span></li>;
@@ -37,16 +29,10 @@ const sampleStyle = StyleSheet.create({
 		display: 'flex',
 		'flex-direction': 'column',
 		width: '100vw',
-		height: '100vw',
+		height: '100vh',
 		padding: '24px',
 		background: 'blue',
 		background: 'linear-gradient(to bottom, #82addb 0%, #ebb2b1 100%)'
-	},
-	iconWrapper: {
-		display: 'flex',
-		'justify-content': 'center',
-		margin: '.5em auto 1em ',
-		height: '120px'
 	},
 
 	iconStyle: {
