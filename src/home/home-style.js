@@ -12,6 +12,13 @@ const screenSize = {
 };
 
 const styleHome = StyleSheet.create({
+	skyline: {
+		position: 'absolute',
+		overflow: 'hidden',
+		width: '100vw',
+		height: '50vh',
+		background: 'url(/assets/Chicago.svg)'
+	},
 	container: {
 		postition: 'relative',
 		overflow: 'hidden',

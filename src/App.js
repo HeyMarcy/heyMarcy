@@ -17,11 +17,14 @@ import UxUiDesign from './work/details/UxUiDesign';
 import Apprenda from './work/details/Apprenda';
 import IosApp from './work/details/IosApp';
 
+import Breakpoints from './Breakpoints';
+
 class App extends Component {
 	render() {
 		return (
 			<Router>
 				<div>
+					<Breakpoints />
 					<Header />
 					<Fade>
 						<Switch>

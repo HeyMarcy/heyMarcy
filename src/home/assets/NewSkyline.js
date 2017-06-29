@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import styleHome from '../home-style.js';
 
-const ChicagoSkyline = () => {
+const NewSkyline = () => {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

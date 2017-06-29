@@ -74,7 +74,6 @@ const FourSamples = props => {
 						<li>React</li>
 						<Pipe />
 						<li>Redux</li>
-
 						<Pipe />
 						<li>MondgoDB</li>
 						<Pipe />

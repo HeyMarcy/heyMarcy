@@ -28,19 +28,18 @@ const styleWork = StyleSheet.create({
 		display: 'flex',
 		'flex-wrap': 'wrap',
 		width: '100vw',
-		height: '90vh',
-		padding: '10px',
-		'padding-top': '8.5vh',
-		'padding-bottom': '2vh',
+		height: '100vh',
+		padding: '9vh 2vw 2vh',
+		'justify-content': 'space-around',
 
 		overflow: 'hidden',
 		background: '#82addb',
 		[screenSize.smartphoneLandscape]: {
-			height: '85vh',
-			'padding-top': '14vh',
-			'padding-bottom': '1vh'
+			padding: '12.5vh 2vw 1vh'
 		},
-		[screenSize.tablet]: {},
+		[screenSize.tablet]: {
+			padding: '8vh 2vw 2vh'
+		},
 		[screenSize.desktop]: {}
 	},
 
@@ -69,31 +68,12 @@ const styleWork = StyleSheet.create({
 			transition: 'all 200ms ease-in',
 			transform: 'scale(1.04)'
 		},
-
-		width: '38.5vw',
-		height: '37.5vh',
+		//xs & s breakpoint
+		width: '45vw',
+		height: '42.5vh',
 		[screenSize.smartphoneLandscape]: {
-			margin: 0,
-			width: '42.5vw',
-			height: '28vh',
-			'justify-content': 'space-between'
-		},
-		[screenSize.tablet]: {
-			width: '40vw',
-			height: '38vh',
-			padding: '1em 1em'
-		},
-		[screenSize.desktop]: {
-			width: '43vw',
-			height: '33vh',
-			margin: '10px',
-			padding: '2em .8em'
-		},
-		[screenSize.desktopXL]: {
 			width: '45vw',
-			height: '34vh',
-			margin: '12px',
-			padding: '2em .8em'
+			height: '37.5vh'
 		}
 	},
 
@@ -223,3 +203,27 @@ const styleWork = StyleSheet.create({
 });
 
 export default styleWork;
+//
+// [screenSize.smartphoneLandscape]: {
+// 	margin: 0,
+// 	width: '42.5vw',
+// 	height: '28vh',
+// 	'justify-content': 'space-between'
+// },
+// [screenSize.tablet]: {
+// 	width: '40vw',
+// 	height: '38vh',
+// 	padding: '1em 1em'
+// },
+// [screenSize.desktop]: {
+// 	width: '43vw',
+// 	height: '33vh',
+// 	margin: '10px',
+// 	padding: '2em .8em'
+// },
+// [screenSize.desktopXL]: {
+// 	width: '45vw',
+// 	height: '34vh',
+// 	margin: '12px',
+// 	padding: '2em .8em'
+// }
