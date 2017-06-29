@@ -10,7 +10,7 @@ import Fade from './Fade';
 // ** Screens ********
 import Home from './home/Home';
 import Work from './work/WorkPage';
-import Contact from './Contact';
+import Contact from './contact/Contact';
 import Header from './Header';
 import MyDay from './work/details/MyDay';
 import UxUiDesign from './work/details/UxUiDesign';

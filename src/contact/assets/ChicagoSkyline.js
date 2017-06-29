@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import styleHome from '../home-style.js';
+import styleHome from '../contact-style.js';
 
 const ChicagoSkyline = () => {
 	return (

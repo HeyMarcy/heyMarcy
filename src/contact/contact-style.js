@@ -12,6 +12,15 @@ const screenSize = {
 };
 
 const styleContact = StyleSheet.create({
+	link: {
+		textDecoration: 'none',
+		color: currentColor,
+		fontWeight: 200
+	},
+	p: {
+		lineHeight: 1,
+		margin: '2em auto'
+	},
 	skyline: {
 		position: 'absolute',
 		overflow: 'hidden',
@@ -53,12 +62,12 @@ const styleContact = StyleSheet.create({
 			overflow: 'hidden'
 		},
 		[screenSize.tablet]: {
-			width: '62vw',
+			width: '52vw',
 			height: '60vh',
 			margin: '8vh auto 32vh'
 		},
 		[screenSize.desktop]: {
-			width: '60vw',
+			width: '40vw',
 			height: '60vh',
 			margin: '10vh auto 30vh',
 			display: 'flex',
@@ -66,14 +75,14 @@ const styleContact = StyleSheet.create({
 			overflow: 'hidden'
 		},
 		[screenSize.desktopXL]: {
-			width: '60vw',
+			width: '40vw',
 			height: '60vh',
-			margin: '5vh auto 35vh'
+			margin: '5vh auto 40vh'
 		}
 	},
 
 	heyThere: {
-		margin: '10% 5% 5%',
+		margin: '10% 1% 5%',
 		'z-index': '20',
 
 		[screenSize.smartphone]: {
@@ -127,10 +136,12 @@ const styleContact = StyleSheet.create({
 		},
 
 		[screenSize.desktop]: {
-			display: 'block'
+			display: 'block',
+			margin: '2em 0'
 		},
 		[screenSize.desktopXL]: {
-			display: 'block'
+			display: 'block',
+			margin: '2em 0'
 		}
 	},
 	skylineWrapper: {
