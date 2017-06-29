@@ -18,7 +18,11 @@ class Home extends Component {
 					<div className={css(styleContact.tagline)}>
 						<p className={css(styleContact.p)}>
 							Github:{' '}
-							<a className={css(styleContact.link)} href="github.com/HeyMarcy">
+							<a
+								className={css(styleContact.link)}
+								href="github.com/HeyMarcy"
+								target="_blank"
+							>
 								github.com/HeyMarcy
 							</a>
 						</p>
@@ -27,6 +31,7 @@ class Home extends Component {
 							<a
 								className={css(styleContact.link)}
 								href="https://www.linkedin.com/in/heymarcy/"
+								target="_blank"
 							>
 								linkedin.com/in/heymarcy
 							</a>
@@ -36,6 +41,7 @@ class Home extends Component {
 							<a
 								className={css(styleContact.link)}
 								href="mailto:marcy.montross@gmail.com"
+								target="_blank"
 							>
 								marcy.montross@gmail.com
 							</a>

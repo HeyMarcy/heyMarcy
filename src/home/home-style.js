@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Skyline from './assets/Chicago.svg';
 import { StyleSheet, css } from 'aphrodite';
 const currentColor = '#295B89';
 const screenSize = {
@@ -10,14 +10,32 @@ const screenSize = {
 	desktop: '@media only screen and (min-width: 992px)and (max-width: 1220px)',
 	desktopXL: '@media only screen and (min-width: 1221px)'
 };
+//'background-position': 'bottom -50px left -360px',
 
 const styleHome = StyleSheet.create({
-	skyline: {
-		position: 'absolute',
-		overflow: 'hidden',
-		width: '100vw',
-		height: '50vh',
-		background: 'url(/assets/Chicago.svg)'
+	skylineStyle: {
+		backgroundImage: `url(${Skyline})`,
+		'background-repeat': 'no-repeat',
+		'background-origin': 'border-box',
+		'background-position': 'bottom -60px left -100px',
+		'background-size': '280%',
+		[screenSize.smartphone]: {},
+		[screenSize.smartphoneLandscape]: {
+			'background-position': 'bottom -60px left -25px',
+			'background-size': '115%'
+		},
+		[screenSize.tablet]: {
+			'background-position': 'bottom -100px left -80px',
+			'background-size': '230%'
+		},
+		[screenSize.desktop]: {
+			'background-position': 'bottom -140px left -240px',
+			'background-size': '130%'
+		},
+		[screenSize.desktopXL]: {
+			'background-position': 'bottom -140px left -180px',
+			'background-size': '120%'
+		}
 	},
 	container: {
 		postition: 'relative',
@@ -53,12 +71,12 @@ const styleHome = StyleSheet.create({
 			overflow: 'hidden'
 		},
 		[screenSize.tablet]: {
-			width: '62vw',
+			width: '65vw',
 			height: '60vh',
 			margin: '8vh auto 32vh'
 		},
 		[screenSize.desktop]: {
-			width: '60vw',
+			width: '80vw',
 			height: '60vh',
 			margin: '10vh auto 30vh',
 			display: 'flex',
@@ -134,32 +152,29 @@ const styleHome = StyleSheet.create({
 		}
 	},
 	skylineWrapper: {
-		overflow: 'hidden'
+		overflow: 'hidden',
+		postition: 'absolute',
+		bottom: 0
+	},
+	skylineImage: {
+		postition: 'absolute',
+		top: 0,
+		overflow: 'hidden',
+		'z-index': '2002',
+
+		[screenSize.smartphone]: {},
+		[screenSize.smartphoneLandscape]: {},
+		[screenSize.tablet]: {},
+		[screenSize.desktopXL]: {}
 	},
 	skyline: {
-		width: '130%',
 		position: 'absolute',
-		bottom: '-20%',
-		left: '-25%',
+		bottom: '20px',
 
-		[screenSize.smartphone]: {
-			width: '357%',
-			left: '-53%',
-			bottom: '-21%'
-		},
-		[screenSize.smartphoneLandscape]: {
-			width: '110%',
-			left: '-5%'
-		},
-		[screenSize.tablet]: {
-			width: '210%',
-			left: '-80%'
-		},
-		[screenSize.desktopXL]: {
-			width: '120%',
-			left: '-17%',
-			bottom: '-23%'
-		}
+		[screenSize.smartphone]: {},
+		[screenSize.smartphoneLandscape]: {},
+		[screenSize.tablet]: {},
+		[screenSize.desktopXL]: {}
 	}
 });
 

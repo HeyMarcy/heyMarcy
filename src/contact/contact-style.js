@@ -131,47 +131,45 @@ const styleContact = StyleSheet.create({
 
 		[screenSize.tablet]: {
 			fontSize: '1.15em',
-			margin: '2em 0',
+			margin: '1em 0',
 			display: 'block'
 		},
 
 		[screenSize.desktop]: {
 			display: 'block',
-			margin: '2em 0'
+			margin: '1em 0'
 		},
 		[screenSize.desktopXL]: {
 			display: 'block',
-			margin: '2em 0'
-		}
-	},
-	skylineWrapper: {
-		overflow: 'hidden'
-	},
-	skyline: {
-		width: '130%',
-		position: 'absolute',
-		bottom: '-20%',
-		left: '-25%',
-
-		[screenSize.smartphone]: {
-			width: '357%',
-			left: '-53%',
-			bottom: '-21%'
-		},
-		[screenSize.smartphoneLandscape]: {
-			width: '110%',
-			left: '-5%'
-		},
-		[screenSize.tablet]: {
-			width: '210%',
-			left: '-80%'
-		},
-		[screenSize.desktopXL]: {
-			width: '120%',
-			left: '-17%',
-			bottom: '-23%'
+			margin: '1em 0'
 		}
 	}
 });
 
 export default styleContact;
+//
+// skyline: {
+// 	width: '130%',
+// 	position: 'absolute',
+// 	bottom: '-20%',
+// 	left: '-25%',
+//
+// 	[screenSize.smartphone]: {
+// 		width: '357%',
+// 		left: '-53%',
+// 		bottom: '-21%'
+// 	},
+// 	[screenSize.smartphoneLandscape]: {
+// 		width: '110%',
+// 		left: '-5%'
+// 	},
+// 	[screenSize.tablet]: {
+// 		width: '210%',
+// 		left: '-80%'
+// 	},
+// 	[screenSize.desktopXL]: {
+// 		width: '120%',
+// 		left: '-17%',
+// 		bottom: '-23%'
+// 	}
+// }
